@@ -33,4 +33,4 @@ Browser QA exercised manual capture, assignment, consultation scheduling/complet
 
 Public process reference: https://ayaaninterior.com/services — discovery call, site visit, design proposal and quotation. This is an independently prepared concept, not a claim of endorsement.
 
-Deployment adds only the Ayaan folder to the existing repository. Neeva and Osa trials are unchanged.
+This is a standalone Ayaan-only repository. Enable GitHub Pages from main / (root) to serve index.html. All trial source and verification files are kept here.
