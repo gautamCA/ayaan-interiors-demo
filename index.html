@@ -13,6 +13,17 @@
 @media(max-width:620px){h1{font-size:30px}.main{padding:23px 15px 30px}.topbar{padding:0 15px}.topdate{display:none}.crumb{font-size:10px}.tag{font-size:8px}.disclosure-bar{padding:9px 15px;font-size:9px}.pagehead{align-items:flex-start;gap:10px}.pagehead>.btn{font-size:10px;padding:9px 11px;min-height:38px;white-space:nowrap;margin-top:23px}.hero{grid-template-columns:1fr}.hero-copy{padding:24px}.hero h2{font-size:28px;max-width:285px}.hero p{max-width:280px}.room{display:none}.metrics{grid-template-columns:1fr 1fr;gap:10px}.metric{min-height:112px;padding:15px}.metric strong{font-size:28px}.bottom-grid,.reportgrid{grid-template-columns:1fr}.table{display:none}.mobilecards{display:grid}.mobilecard{padding:16px;border-bottom:1px solid var(--line)}.mobilecard:last-child{border:0}.mobilecard>.flex{justify-content:space-between;margin-bottom:12px}.mobilecard .task{max-width:none}.mobilecard-bottom{display:flex;justify-content:space-between;align-items:center;gap:9px}.toolbar{padding:12px;gap:8px}.searchbox{min-width:100%;flex-basis:100%}.toolbar select{flex:1;font-size:11px}.panel-foot{font-size:9px;flex-wrap:wrap}.sectionhead h2{font-size:16px}.sectionhead>.btn{font-size:10px}.guide{padding:14px;gap:10px}.guide p{font-size:10px}.guide .eyebrow{font-size:9px}.guide .btn{font-size:10px;padding:8px}.drawer{width:100%;padding:21px 17px}.drawer-title{font-size:27px}.drawer-sub{font-size:10px}.drawer-head{margin-bottom:16px}.detailbox{padding:16px}.modalwrap{padding:12px}.modal{padding:23px 18px;max-height:94vh;border-radius:13px}.modal-head h2{font-size:20px}.formgrid{gap:12px}.formgrid>.field{grid-column:1/-1}.details-grid{gap:15px}.quote-row{grid-template-columns:minmax(100px,1fr) 51px 78px 28px;gap:5px}.quote-row .input{font-size:10px;padding:7px 5px}.quote-totals strong{font-size:22px}.agenda-card{padding:15px;gap:11px;flex-wrap:wrap}.agenda-card>.btn{margin-left:56px}.agenda-card .body{min-width:180px}.footer{font-size:9px}.chat-sample{padding:15px}.bubble{font-size:12px;padding:14px}.column{flex-basis:250px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media print{body>*{display:none!important}.print-area{display:block!important;background:white;color:#222;padding:28px;font-family:Arial,sans-serif}.print-area h1{font-size:29px}.print-area h2{font-size:15px;margin:22px 0 12px}.print-area p{font-size:11px;line-height:1.8}.print-area table{width:100%;border-collapse:collapse;margin:24px 0;font-size:11px}.print-area th,.print-area td{padding:12px 8px;border-bottom:1px solid #ddd;text-align:left}.print-area .sum{text-align:right;font-size:19px;font-weight:bold}.print-area .disclaimer{padding:13px;background:#f2f2ed;margin-top:22px;font-size:10px} @page{size:A4;margin:12mm}}
+
+/* Keep quotation fields inside narrow phone drawers and dialogs. */
+@media (max-width:360px){
+.quote-row{grid-template-columns:minmax(0,1fr) 43px 62px 26px;gap:4px}
+.quote-row>*{min-width:0}
+.quote-row>.iconbtn{width:100%;max-width:100%;padding:0}
+.quote-row .input{padding:7px 4px;font-size:11px}
+.modal{padding-left:14px;padding-right:14px}
+.guide{flex-wrap:wrap}
+.guide .flex{width:100%;justify-content:flex-start}
+}
 </style>
 </head><body>
 <a class="skip" href="#main">Skip to workspace</a><div id="app"></div><div id="layers"></div><div id="live" aria-live="polite" aria-atomic="true"></div><section id="print" class="print-area"></section>
